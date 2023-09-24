@@ -1,0 +1,21 @@
+/* Hello! I'm a stylesheet cos I've got style (⌐▨_▨) */
+
+header {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-nav {
+    text-align: center;
+}
+
+.header-nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
