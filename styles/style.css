@@ -12,10 +12,30 @@ header {
 
 .header-nav {
     text-align: center;
+    font-weight: lighter;
+    font-family: Montserrat;
 }
 
 .header-nav-item {
     display: inline-block;
     vertical-align: middle;
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('styles/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('styles/fonts/montserrat/Montserrat-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('styles/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('styles/fonts/montserrat/Montserrat-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
