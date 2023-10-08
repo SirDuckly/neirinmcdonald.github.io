@@ -2,22 +2,28 @@
 
 body {
     font-family: Montserrat;
+    height: auto;
+    margin: 0%;
 }
 
 header {
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    background: transparent;
-    z-index: 1000;
-    width: 100%;
+    /*background: transparent;*/
+    z-index: 1;
+    width: 100vw;
+    height: 5vh;
+    background-color: #b30606;
 }
 
 .header-nav {
     display: flex;
     justify-content: center;
-    gap: 1em;
+    align-items: center;
+    gap: 2em;
+    height: 100%;
     text-align: center;
     font-weight: lighter;
 }
@@ -33,14 +39,23 @@ header {
 }
 
 .header-nav-item:hover {
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: lightgray;
+}
+
+.content-area-main {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    margin: 5vh 0% 0% 0%;
+    background-color: #2f2e8b; 
+    z-index: 0;
 }
 
 @font-face {
     font-family: 'Montserrat-bold';
     src: url('fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
-        url('fonts/montserrat/Montserrat-Bold.woff2') format('woff');
+        url('fonts/montserrat/Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -48,8 +63,8 @@ header {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
-        url('fonts/montserrat/Montserrat-Bold.woff2') format('woff');
+    src: url('fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/montserrat/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
