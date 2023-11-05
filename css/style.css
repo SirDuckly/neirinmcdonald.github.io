@@ -46,7 +46,10 @@ header {
     position: relative;
     width: 100vw;
     height: auto;
-    background-color: #2f2e8b; 
+    /*background: linear-gradient(-45deg, #08090A, #111214, #1A1C1E, #232528, #2B2E31, #34383B, #3D4145);
+	animation: gradient 10s ease infinite;
+    background-size: 400% 400%;*/
+    background-color: #34383B;
     z-index: 0;
 }
 
@@ -56,6 +59,27 @@ header {
     /*margin: 5vh 0vh 0vh 0vh;*/
     justify-content: center;
     align-items: center;
+}
+
+.wave {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 110px;
+}
+
+.wave .shape-fill {
+    fill: #34383B;
 }
 
 .whois-area {
@@ -98,4 +122,16 @@ header {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
