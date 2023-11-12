@@ -1,5 +1,44 @@
 /* Hello! I'm a stylesheet cos I've got style (⌐▨_▨) */
 
+/* @import "./themes/themes.css"; */
+
 #title-area {
     text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 90vh;
+    padding-bottom: 25vh;
+}
+
+.body-area {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.logo-area {
+    padding-left: 30px;
+}
+
+.nav-area {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    padding-right: 30px;
+}
+
+.title {
+    font-size: 80px;
+}
+
+.account-links {
+    display: inline-block;
+    width: 50px;
+    height:50px;
+}
+
+.area-1 {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }

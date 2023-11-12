@@ -3,40 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DEV</title>
+        <title>PICO DEV</title>
         <link rel="stylesheet" href="css/stylePico.css">
         <link rel="stylesheet" href="css/pico.min.css">
     </head>
-    <body>
+    <body class="body-area">
         <nav>
-            <ul>
+            <ul class="logo-area">
               <li><strong>Logo here</strong></li>
             </ul>
-            <ul>
+            <ul class="nav-area">
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <header>
             <div class="container" id="title-area">
-                <h1>Sir Duckly</h1>
-                <p>Security Professional</p>
-                <div class="grid">
-                    <div>Linked In</div>
-                    <div>git</div>
-                    <div>HTB</div>
-                    <div>Hacker One</div>
-                </div>
+                <hgroup>
+                    <h1 class="title">Sir Duckly</h1>
+                    <p>Security Professional</p>
+                    <div class="">
+                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Linked in link"></a>
+                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Hack the box link"></a>
+                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Github link"></a>
+                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Hacker Rank link"></a>
+                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Hacker one link"></a>
+                    </div>
+                </hgroup>
             </div>
+            <a href="#content" role="button" class="outline down-button">\/</a>
         </header>
-        <main class="container">
-            <!--<script src=""></script>-->
-
-        </main>
+        <article>
+            <main class="container" id="content">
+                <!--<script src=""></script>-->
+                <section class="area-1">
+                    <h3>Whois Sir Duckly?</h3>
+                    <div style="display: flex; text-align: justify; text-justify: inter-word;">
+                        <div style="width: 45%; margin-right: 5%">
+                            <p>I am a hard-working and experienced cyber security professional.
+                            Since June 2021 I have been employed as a Security Engineer
+                            supporting the customer interface. In particular I support
+                            customers by providing subject matter expertise and appropriate
+                            technical solutions to meet customer requirements in their
+                            defence against cyber adversaries. I am seeking opportunities in
+                            the cyber security space backed with strong programming and
+                            security skills.
+                            </p>
+                        </div>  
+                        <div style="width: 45%; margin-left: 5%;">
+                            <img src="/images/placeholder.jpg" alt="Temp placeholder">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </article>
         <footer>
-            <div>
 
-            </div>
         </footer>
+        
     </body>
 </html>
