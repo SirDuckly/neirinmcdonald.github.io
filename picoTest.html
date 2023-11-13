@@ -13,8 +13,21 @@
               <li><strong>Logo here</strong></li>
             </ul>
             <ul class="nav-area">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+                <li><a href="#content">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="burger-nav-area">
+                <a href="#" onclick="event.preventDefault()" class="secondary" aria-label="Menu">
+                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="4" x2="21" y2="4">
+                        </line>
+                        <line x1="3" y1="10" x2="21" y2="10">
+                        </line>
+                        <line x1="3" y1="16" x2="21" y2="16">
+                        </line>
+                    </svg>
+                </a>
             </ul>
         </nav>
         <header>
@@ -37,25 +50,25 @@
             <main class="container" id="content">
                 <!--<script src=""></script>-->
                 <section class="area-1">
-                    <h3>Whois Sir Duckly?</h3>
-                    <div style="display: flex; text-align: justify; text-justify: inter-word;">
-                        <div style="width: 45%; margin-right: 5%">
-                            <p>I am a hard-working and experienced cyber security professional.
+                    <h3 class="whoami-title">Whois Sir Duckly?</h3>
+                    <div class="whoami-area">
+                        <div class="whoami-area-text">
+                            <p class="whoami-text">I am a hard-working and experienced cyber security professional.
                             Since June 2021 I have been employed as a Security Engineer
                             supporting the customer interface. In particular I support
                             customers by providing subject matter expertise and appropriate
                             technical solutions to meet customer requirements in their
                             defence against cyber adversaries. I am seeking opportunities in
                             the cyber security space backed with strong programming and
-                            security skills.
-                            </p>
+                            security skills.</p>
                         </div>  
-                        <div style="width: 45%; margin-left: 5%;">
+                        <div class="whoami-image">
                             <img src="/images/placeholder.jpg" alt="Temp placeholder">
                         </div>
                     </div>
                 </section>
             </main>
+            
         </article>
         <footer>
 

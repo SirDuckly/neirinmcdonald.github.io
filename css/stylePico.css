@@ -2,6 +2,10 @@
 
 /* @import "./themes/themes.css"; */
 
+html {
+    scroll-behavior: smooth;
+}
+
 #title-area {
     text-align: center;
     display: flex;
@@ -12,7 +16,6 @@
 }
 
 .body-area {
-    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -24,7 +27,11 @@
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    padding-right: 30px;
+    padding-right: 2dvw;
+}
+
+.burger-nav-area {
+    display: none;
 }
 
 .title {
@@ -39,6 +46,100 @@
 
 .area-1 {
     height: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    margin-bottom: 0%;
+}
+
+.whoami-area {
+    display: flex;    
+}
+
+.whoami-area-text {
+    width: 48%; 
+    margin-right: 2%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.whoami-text {
+    margin-bottom: 0%;
+}
+
+.whoami-image {
+    width: 48%; 
+    margin-left: 2%;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+@media screen and (max-width: 980px) {
+    .whoami-area {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .whoami-title {
+        margin-bottom: 3%;
+    }
+
+    .whoami-area-text {
+        width: auto; 
+        margin-right: 0%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .whoami-text {
+        width: auto; 
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .whoami-image {
+        width: auto; 
+        margin-left: 0%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-area {
+        display: none;
+    }
+
+    .burger-nav-area {
+        display: flex;
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        width: 10%;
+        margin-right: 2dvw !important;
+    }
+
+    .whoami-area {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .whoami-title {
+        margin-bottom: 3%;
+    }
+
+    .whoami-area-text {
+        width: auto; 
+        margin-right: 0%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .whoami-text {
+        width: auto; 
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .whoami-image {
+        width: auto; 
+        margin-left: 0%;
+        margin-bottom: 3%;
+    }
 }
