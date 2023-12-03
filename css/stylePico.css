@@ -6,12 +6,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.nav-area {
+    height: 7vh;
+    
+}
+
+.header-area {
+    padding-bottom: 0px;
+}
+
 #title-area {
     text-align: center;
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    height: 90vh;
+    height: 93vh;
     padding-bottom: 25vh;
 }
 
@@ -23,14 +32,14 @@ html {
     padding-left: 30px;
 }
 
-.nav-area {
+.nav-area-links {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
     padding-right: 2dvw;
 }
 
-.burger-nav-area {
+.nav-area-burger {
     display: none;
 }
 
@@ -42,6 +51,23 @@ html {
     display: inline-block;
     width: 50px;
     height:50px;
+}
+
+.down-button-area {
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Try and get this working at some point */
+.down-button-area:hover {
+    opacity: 1
+}
+
+.article-area {
+    margin-top: 0px;
 }
 
 .area-1 {
@@ -70,6 +96,30 @@ html {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
+}
+
+.project-area {
+    
+}
+
+.project-item {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.blog-item {
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.hammer-svg {
+    display: flex;
 }
 
 @media screen and (max-width: 980px) {
@@ -103,11 +153,11 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-    .nav-area {
+    .nav-area-links {
         display: none;
     }
 
-    .burger-nav-area {
+    .nav-area-burger {
         display: flex;
         justify-content: center; /* Horizontally center */
         align-items: center; /* Vertically center */
@@ -141,5 +191,11 @@ html {
         width: auto; 
         margin-left: 0%;
         margin-bottom: 3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 70% !important;
     }
 }
