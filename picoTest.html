@@ -14,8 +14,8 @@
             </ul>
             <ul class="nav-area-links">
                 <li><a href="#area-1">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#area-2">Projects</a></li>
+                <li><a href="#area-3">Blog</a></li>
             </ul>
             <ul class="nav-area-burger">
                 <a href="#" onclick="event.preventDefault()" class="secondary" aria-label="Menu">
@@ -33,7 +33,7 @@
         <header class="header-area">
             <div class="container" id="title-area">
                 <hgroup>
-                    <h1 class="title">Sir Duckly</h1>
+                    <h1 class="title">Neirin McDonald</h1>
                     <p>Security Professional</p>
                     <div class="">
                         <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Linked in link"></a>
@@ -46,7 +46,7 @@
             </div>
             <div class="down-button-area">
                 <a href="#area-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#edf0f3" viewBox="0 0 256 256">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="down-button" fill="#edf0f3" viewBox="0 0 256 256">
                         <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
                         </path>
                     </svg>
@@ -58,57 +58,84 @@
                 </a>
             </div>
         </header>
-        <article class="article-area">
-            <main class="container" id="content">
-                <!--<script src=""></script>-->
-                <section class="area-1" id="area-1">
-                    <h3 class="whoami-title">Whois Sir Duckly?</h3>
-                    <div class="whoami-area">
-                        <div class="whoami-area-text">
-                            <p class="whoami-text">I am a hard-working and experienced cyber security professional.
-                            Since June 2021 I have been employed as a Security Engineer
-                            supporting the customer interface. In particular I support
-                            customers by providing subject matter expertise and appropriate
-                            technical solutions to meet customer requirements in their
-                            defence against cyber adversaries. I am seeking opportunities in
-                            the cyber security space backed with strong programming and
-                            security skills.</p>
-                        </div>  
-                        <div class="whoami-image">
-                            <img src="/images/placeholder.jpg" alt="Temp placeholder">
+        <main class="main-area">
+            <article class="article-area">
+                <div class="container" id="content">
+                    <!--<script src=""></script>-->
+                    <section class="area-1" id="area-1">
+                        <h3 class="whoami-title">Whois</h3>
+                        <div class="whoami-area">
+                            <div class="whoami-area-text">
+                                <p class="whoami-text u">
+                                    <b>Hi, I'm Neirin.</b>
+                                    <br>
+                                    I'm a cybersecurity professional who graduated with a first in ethical
+                                    hacking from Abertay University. Since then, I have been working as a 
+                                    Security Engineer at Adarma Ltd. 
+                                    <br><br>
+                                    Alongside my job I enjoy keeping up to date with cyber security by 
+                                    attending monthly Defcon meetings, Bsides events and other security 
+                                    conferences. 
+                                    <br><br>
+                                    I currently hold an Admin level certification in Splunk, with plans
+                                    to get certifications for Microsoft technologies 
+                                </p>
+                            </div>  
+                            <div class="whoami-image">
+                                <img src="/images/placeholder.jpg" alt="Temp placeholder">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <div class="container" id="content">
+                <section class="area-2" id="area-2">
+                    <h3 class="whoami-title">My past projects / interests</h3>
+                    <div class="grid">
+                        <div class="project-item">
+                            <h4 class="project-title">Honey pots</h4>
+                            <img src="images/raspberryPiWhiteCropped.png" alt="Black and white bee" class="project-img">
+                            <p>
+                                Honeypots were one of the first things I found interesting within cyber security, 
+                                as I find tricking malicious actors to be funny. Some of the technologies I've 
+                                used in previous honeypot projects are 
+                                <a href="https://github.com/cowrie/cowrie">Cowrie</a>, 
+                                <a href="https://www.elastic.co/elastic-stack">Elastic/ELK stack</a>
+                                and <a href="https://www.snort.org/">Snort</a>.
+                            </p>
+                        </div>
+                        <div class="project-item">
+                            <h4 class="project-title">Small electronics</h4>
+                            <img src="images/raspberryPiWhiteCropped.png" alt="Black and white bee" class="project-img">
+                            <p>
+                                One of my first personal computers was a Raspberry Pi 1, which I still have. This 
+                                was the first introduction I had into computers and the world of small single-board
+                                computers and PCB's. Since then I have amassed a small collection of Raspberry Pis 
+                                and miniature electronics which I have used for projects. Like the Dangerous Prototypes
+                                <a href="http://dangerousprototypes.com/docs/Bus_Pirate">Bus pirate</a>, or the 
+                                NodeMCU <a href="https://en.wikipedia.org/wiki/NodeMCU">ESP8266</a>.
+                            </p>
+                        </div>
+                        <div class="project-item">
+                            <h4 class="project-title">Programming</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="project-img" fill="#edf0f3" viewBox="0 0 256 256">
+                                <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z">
+                                </path>
+                            </svg>
+                            <p>
+                                The first language I used and learnt was Python for simple scripts like an alarm clock.
+                                Since then I have used several languages over the years like Java, C++
+                                and of course web development languges like HTML, CSS, Javascript, and PHP.
+                            </p>
                         </div>
                     </div>
                 </section>
-                <section class="area-2">
-                    <h3 class="whoami-title">My past projects</h3>
-                        <div class="grid project-area">
-                            <div class="project-item">
-                                <h4 class="project-title">Honey pots</h4>
-                                <p>Honeypots were one of the first things I found interesting within cyber security, 
-                                    as I find tricking malicious actors to be funny. Some of the technologies I've 
-                                    used in previous honeypot projects are 
-                                    <a href="https://github.com/cowrie/cowrie">Cowrie</a>, 
-                                    <a href="https://www.elastic.co/elastic-stack">Elastic/ELK stack</a>
-                                     and <a href="https://www.snort.org/">Snort</a>.</p>
-                                <img src="images/beeB&WWings.png" alt="Black and white bee">
-                            </div>
-                            <div class="project-item">
-                                <h4 class="project-title">Title area</h4>
-                                <p>2</p>
-                            </div>
-                            <div class="project-item">
-                                <h4 class="project-title">Title area</h4>
-                                <p>3</p>
-                            </div>
-                            <div class="project-item">
-                                <h4 class="project-title">Title area</h4>
-                                <p>4</p>
-                            </div>
-                      </div>
-                </section>
-                <section class="area-3">
-                    <h3 class="whoami-title">Blog</h3>
-                        <div class="grid">
+            </div>
+            <article>
+                <div class="container" id="content">
+                    <section class="area-3" id="area-3">
+                        <h3 class="whoami-title">Blog</h3>
+                        <div class="blog-area">
                             <div class="blog-item">
                                 <p>Its under construction</p>
                                 <div class="hammer-svg">
@@ -120,11 +147,12 @@
                                     </svg>
                                 </div>
                             </div>
-                      </div>
-                </section>
-            </main>
-        </article>
-        <footer>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <footer class="footer-area">
             
         </footer>
         
