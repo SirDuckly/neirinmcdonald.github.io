@@ -12,8 +12,7 @@ svg {
 }
 
 .nav-area {
-    height: 7vh;
-    
+    height: 7vh;   
 }
 
 .header-area {
@@ -34,8 +33,17 @@ svg {
     overflow-x: hidden;
 }
 
-.logo-area {
+.nav-theme-area {
     padding-left: 30px;
+}
+
+.theme-toggle {
+    cursor: pointer; 
+}
+
+[data-theme='light'] .sun-icon,
+[data-theme='dark'] .moon-icon {
+    display: none !important;
 }
 
 .nav-area-links {
@@ -52,7 +60,6 @@ svg {
 .title {
     font-size: 80px;
 }
-
 
 .account-links-area {
    
@@ -134,7 +141,7 @@ svg {
 }
 
 .project-item {
-    background-color: var(--card-background-color);
+    background-color: var(--code-background-color);
     border-radius: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -167,7 +174,7 @@ svg {
 .blog-item {
     min-width:30%;
     min-height: 210px;
-    background-color: var(--background-color);
+    background-color: var(--muted-border-color);
     border-radius: 15px;
     padding: 20px;
     display: flex;
@@ -187,6 +194,10 @@ svg {
 }
 
 @media screen and (max-width: 980px) {
+    html {
+        scroll-padding: 30px;
+    }
+
     .whoami-area {
         display: flex;
         flex-direction: column-reverse;
