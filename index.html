@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>PICO DEV</title>
-        <link rel="stylesheet" href="css/stylePico.css">
+        <title>Neirin McDonald</title>
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/pico.min.css">
     </head>
     <body class="body-area">
@@ -19,7 +19,7 @@
             </ul>
             <ul class="nav-area-burger">
                 <a href="#" onclick="event.preventDefault()" class="secondary" aria-label="Menu">
-                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <svg aria-hidden="true" focusable="false" role="burger menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="4" x2="21" y2="4">
                         </line>
                         <line x1="3" y1="10" x2="21" y2="10">
@@ -33,20 +33,53 @@
         <header class="header-area">
             <div class="container" id="title-area">
                 <hgroup>
-                    <h1 class="title">Neirin McDonald</h1>
-                    <p>Security Professional</p>
-                    <div class="">
-                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Linked in link"></a>
-                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Hack the box link"></a>
-                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Github link"></a>
-                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Hacker Rank link"></a>
-                        <a class="account-links" href="#" role=""><img src="/images/hacerrankLogoWhite.png" alt="Hacker one link"></a>
+                    <h1 class="title" role="Title">Neirin McDonald</h1>
+                    <p role="Sub-title">Cyber Security Professional</p>
+                    <div class="account-links-area">
+                        <!-- Icons sourced from https://simpleicons.org/ -->
+                        <div class="account-links">
+                            <a href="https://uk.linkedin.com/in/neirinmcdonald" role="Linked in account link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+                                    <title>LinkedIn</title>
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <!--
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                -->
+                            </a>
+                        </div>
+                        <div class="account-links">
+                            <a href="https://github.com/SirDuckly/" role="Github account link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+                                    <title>GitHub</title>
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="account-links">
+                            <a href="https://app.hackthebox.com/profile/1380466" role="Hack the box account link">
+                                <svg  xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+                                    <title>Hack The Box</title>
+                                    <path d="m22.5106 6.4566.0008-.0123a.888.888 0 0 0-.2717-.6384c-.0084-.0084-.018-.0155-.0267-.0235-.0186-.0166-.0371-.0333-.0572-.0484-.0193-.0147-.04-.0276-.0607-.0406-.0096-.006-.0182-.0131-.0281-.0188L12.4576.1266a.891.891 0 0 0-.9223.0043L1.933 5.6744c-.0107.0062-.0203.014-.0307.0205-.0073.0047-.015.008-.0223.0128-.007.0047-.013.0106-.02.0155a.8769.8769 0 0 0-.147.1333l-.0026.003a.8872.8872 0 0 0-.2218.5847l.0009.014c-.0002.0088-.0015.0176-.0015.0264v11.0708c0 .3277.1802.6288.469.7836l9.5986 5.5417c.0076.0044.0158.0075.0236.0117a.8754.8754 0 0 0 .166.0687c.0134.004.0266.0083.0401.0117a.8793.8793 0 0 0 .072.0142c.0117.0019.0232.0045.0349.006a.835.835 0 0 0 .2157 0c.0117-.0015.0232-.0041.0348-.006a.9.9 0 0 0 .072-.0142c.0135-.0034.0267-.0077.04-.0117a.895.895 0 0 0 .0646-.0217.9134.9134 0 0 0 .1015-.047c.0078-.0042.016-.0072.0236-.0117l9.5986-5.5417a.8888.8888 0 0 0 .469-.7836V6.4779c0-.0071-.0012-.0142-.0014-.0213zM5.2543 6.0822l6.5367-3.774a.4182.4182 0 0 1 .4182 0l6.5366 3.774a.4182.4182 0 0 1 0 .7243l-6.5367 3.774a.4182.4182 0 0 1-.4182 0l-6.5366-3.774a.4182.4182 0 0 1 0-.7243zm5.6134 14.3449a.4172.4172 0 0 1-.626.3613L3.718 17.0218a.4173.4173 0 0 1-.2086-.3613V9.1279a.4172.4172 0 0 1 .6258-.3613l6.524 3.7666a.4172.4172 0 0 1 .2086.3614v7.5325zm9.623-3.7666a.4173.4173 0 0 1-.2086.3613l-6.5239 3.7666a.4172.4172 0 0 1-.6259-.3613v-7.5325c0-.149.0796-.2868.2087-.3614l6.5239-3.7666a.4172.4172 0 0 1 .6258.3613v7.5326z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="account-links">
+                            <a href="https://www.hackerrank.com/profile/neirinmcdonald" role="Hackerrank account link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+                                    <title>HackerRank</title>
+                                    <path d="M0 0v24h24V0zm9.95 8.002h1.805c.061 0 .111.05.111.111v7.767c0 .061-.05.111-.11.111H9.95c-.061 0-.111-.05-.111-.11v-2.87H7.894v2.87c0 .06-.05.11-.11.11H5.976a.11.11 0 01-.11-.11V8.112c0-.06.05-.11.11-.11h1.806c.061 0 .11.05.11.11v2.869H9.84v-2.87c0-.06.05-.11.11-.11zm2.999 0h5.778c.061 0 .111.05.111.11v7.767a.11.11 0 01-.11.112h-5.78a.11.11 0 01-.11-.11V8.111c0-.06.05-.11.11-.11z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </hgroup>
             </div>
             <div class="down-button-area">
                 <a href="#area-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="down-button" fill="#edf0f3" viewBox="0 0 256 256">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="down-button" viewBox="0 0 256 256">
                         <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
                         </path>
                     </svg>
@@ -94,7 +127,14 @@
                     <div class="grid">
                         <div class="project-item">
                             <h4 class="project-title">Honey pots</h4>
-                            <img src="images/raspberryPiWhiteCropped.png" alt="Black and white bee" class="project-img">
+                            <div class="project-img">
+                                 <!-- https://phosphoricons.com/ - desktop-tower -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 256 256">
+                                    <title>Tower computer with monitor</title>
+                                    <path d="M22,96v72a10,10,0,0,0,10,10h80a6,6,0,0,1,0,12H94v20h18a6,6,0,0,1,0,12H64a6,6,0,0,1,0-12H82V190H32a22,22,0,0,1-22-22V96A22,22,0,0,1,32,74h80a6,6,0,0,1,0,12H32A10,10,0,0,0,22,96ZM208,66H176a6,6,0,0,0,0,12h32a6,6,0,0,0,0-12Zm0,32H176a6,6,0,0,0,0,12h32a6,6,0,0,0,0-12Zm38-50V208a14,14,0,0,1-14,14H152a14,14,0,0,1-14-14V48a14,14,0,0,1,14-14h80A14,14,0,0,1,246,48Zm-12,0a2,2,0,0,0-2-2H152a2,2,0,0,0-2,2V208a2,2,0,0,0,2,2h80a2,2,0,0,0,2-2ZM192,170a10,10,0,1,0,10,10A10,10,0,0,0,192,170Z">
+                                </path>
+                            </svg>
+                            </div>
                             <p>
                                 Honeypots were one of the first things I found interesting within cyber security, 
                                 as I find tricking malicious actors to be funny. Some of the technologies I've 
@@ -106,7 +146,14 @@
                         </div>
                         <div class="project-item">
                             <h4 class="project-title">Small electronics</h4>
-                            <img src="images/raspberryPiWhiteCropped.png" alt="Black and white bee" class="project-img">
+                            <div class="project-img">
+                                <!-- https://phosphoricons.com/ - circuitry -->
+                                <svg xmlns="http://www.w3.org/2000/svg" role="Circuit board icon" height="100" width="100" viewBox="0 0 256 256">
+                                    <title>Circuit board</title>
+                                    <path d="M208,34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM88,158a10,10,0,1,1-10,10A10,10,0,0,1,88,158ZM46,208V48a2,2,0,0,1,2-2H82V146.84a22,22,0,1,0,12,0V110.49l52,52V210H48A2,2,0,0,1,46,208Zm164,0a2,2,0,0,1-2,2H158V160a6,6,0,0,0-1.76-4.24L94,93.51V46h36V72a6,6,0,0,0,1.76,4.24l17,17a22,22,0,1,0,8.48-8.48L142,69.51V46h66a2,2,0,0,1,2,2ZM168,94a10,10,0,1,1-10,10A10,10,0,0,1,168,94Z">
+                                    </path>
+                                </svg>
+                            </div>
                             <p>
                                 One of my first personal computers was a Raspberry Pi 1, which I still have. This 
                                 was the first introduction I had into computers and the world of small single-board
@@ -118,10 +165,14 @@
                         </div>
                         <div class="project-item">
                             <h4 class="project-title">Programming</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="project-img" fill="#edf0f3" viewBox="0 0 256 256">
-                                <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z">
-                                </path>
-                            </svg>
+                            <div class="project-img">
+                                <!-- https://phosphoricons.com/ - code -->
+                                <svg xmlns="http://www.w3.org/2000/svg" role="Programming icon" height="100" width="100" viewBox="0 0 256 256">
+                                    <title>Programming icon</title>
+                                    <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z">
+                                    </path>
+                                </svg>
+                            </div>
                             <p>
                                 The first language I used and learnt was Python for simple scripts like an alarm clock.
                                 Since then I have used several languages over the years like Java, C++
@@ -134,12 +185,12 @@
             <article>
                 <div class="container" id="content">
                     <section class="area-3" id="area-3">
-                        <h3 class="whoami-title">Blog</h3>
+                        <h3 class="whoami-title" role="Blog title">Blog</h3>
                         <div class="blog-area">
                             <div class="blog-item">
                                 <p>Its under construction</p>
                                 <div class="hammer-svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#edf0f3" viewBox="0 0 256 256">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" role="Image of hammer">
                                         <path d="M245.66,129,217,157.66a8,8,0,0,1-11.3,0L168.1,120l-28,28-32-32,28-28L80,31.78a87.81,87.81,0,0,1,98.31,18l67.35,67.89A8,8,0,0,1,245.66,129Z" opacity="0.2">
                                         </path>
                                         <path d="M251.34,112,183.88,44.08a96.1,96.1,0,0,0-135.77,0l-.09.09L34.25,58.4A8,8,0,0,0,45.74,69.53L59.47,55.35a79.92,79.92,0,0,1,18.71-13.9L124.68,88l-96,96a16,16,0,0,0,0,22.63l20.69,20.69a16,16,0,0,0,22.63,0l96-96,14.34,14.34h0L200,163.3a16,16,0,0,0,22.63,0l28.69-28.69A16,16,0,0,0,251.34,112ZM60.68,216,40,195.31l68-68L128.68,148ZM162.34,114.32,140,136.67,119.31,116l22.35-22.35a8,8,0,0,0,0-11.32L94.32,35a80,80,0,0,1,78.23,20.41l44.22,44.51L188,128.66l-14.34-14.34A8,8,0,0,0,162.34,114.32Zm49,37.66-12-12L228,111.25l12,12Z">
@@ -153,7 +204,13 @@
             </article>
         </main>
         <footer class="footer-area">
-            
+            <div class="container">
+                <section class="area-4" id="area-4">
+                    <p>Created by Neirin McDonald •
+                    Built with <a href="https://picocss.com/">Pico CSS</a>
+                    </p>
+                </section>
+            </div>
         </footer>
         
     </body>
