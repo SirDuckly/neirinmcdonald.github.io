@@ -9,6 +9,7 @@ html {
 
 svg {
     fill: var(--h1-color);
+    color: var(--h1-color);
 }
 
 .nav-area {
@@ -53,8 +54,29 @@ svg {
     padding-right: 2dvw;
 }
 
+.nav-area-burger-click { 
+    cursor: pointer;
+}
+
+.nav-area-burger-links-area {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    background: var(--card-background-color);
+    opacity: 98%;
+    list-style: none;
+    height: fit-content;
+    width: 100dvw;
+    display: block;
+}
+
 .nav-area-burger {
     display: none;
+}
+
+.nav-area-hamburger-close {
+
 }
 
 .title {

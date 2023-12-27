@@ -10,7 +10,6 @@
         <title>Neirin McDonald</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/pico.min.css">
-        <link rel="stylesheet" href="css/burgerMenu.css">
     </head>
     <body class="body-area">
         <nav class="nav-area">
@@ -40,9 +39,22 @@
                 <li><a href="#area-2">Projects</a></li>
                 <li><a href="#area-3">Blog</a></li>
             </ul>
+            <div id="nav-area-burger-links-area" class="nav-area-burger-links-area">
+                <a class="nav-area-burger-click" onclick="toggleMenu()" aria-label="Close burger Menu button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                        <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+                    </path>
+                    </svg>
+                </a>
+                <ul class="nav-area-burger-links" onclick="toggleMenu()">
+                    <li><a href="#area-1">About</a></li>
+                    <li><a href="#area-2">Projects</a></li>
+                    <li><a href="#area-3">Blog</a></li>
+                </ul>
+            </div>
             <ul class="nav-area-burger">
-                <a href="#" onclick="event.preventDefault()" class="secondary" aria-label="Menu">
-                    <svg aria-hidden="true" focusable="false" role="burger menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <a class="nav-area-burger-click" onclick="toggleMenu()" aria-label="Open burger Menu button">
+                    <svg aria-hidden="true" focusable="true" role="burger menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="4" x2="21" y2="4">
                         </line>
                         <line x1="3" y1="10" x2="21" y2="10">
@@ -52,6 +64,7 @@
                     </svg>
                 </a>
             </ul>
+              
         </nav>
         <header class="header-area">
             <div class="container" id="title-area">
@@ -236,6 +249,8 @@
             </div>
         </footer>
         <script defer src="scripts/changeStyle.js">
+        </script>
+        <script defer src="scripts/burgerMenu.js">
         </script>
     </body>
 </html>
