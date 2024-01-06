@@ -8,12 +8,18 @@ html {
 }
 
 svg {
-    fill: var(--h1-color);
     color: var(--h1-color);
 }
 
+svg:hover {
+    color: var(--color);
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+}
+
 .nav-area {
-    height: 7vh;   
+    height: 7dvh;   
 }
 
 .header-area {
@@ -51,11 +57,24 @@ svg {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    padding-right: 2dvw;
+    margin-right: 2dvw !important; /* Will get overwritten by Pico CSS if not important */
 }
 
-.nav-area-burger-click { 
+.nav-area-burger-open-btn { 
     cursor: pointer;
+    margin: 0px 0px 0px 0px;
+}
+
+.nav-area-burger-close-area {
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.nav-area-burger-close-btn {
+    cursor: pointer;
+    margin: 0px;
+    float: right;
 }
 
 .nav-area-burger-links-area {
@@ -71,12 +90,27 @@ svg {
     display: block;
 }
 
-.nav-area-burger {
-    display: none;
+.nav-area-burger-links {
+    display: grid;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.nav-area-hamburger-close {
+.nav-area-burger-links li a{
+    font-size: 25px;
+    fill: var(--h1-color);
+    color: var(--h1-color);
+}
 
+.nav-area-burger-links li a:hover{
+    fill: var(--color);
+    color: var(--color);
+}
+
+.nav-area-burger {
+    display: none;
 }
 
 .title {
@@ -186,6 +220,13 @@ svg {
     margin-bottom: 10px;
 }
 
+.project-img svg {
+    color: var(--h1-color) !important; /* Disable hover colour change */
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+}
+
 .blog-area {
     display: flex;
     align-items: center; /* Vertically center */
@@ -204,6 +245,10 @@ svg {
     align-items: center; /* Vertically center */
     text-align: center;
     justify-content: center; /* Horizontally center */
+}
+
+.blog-item svg {
+    color: var(--h1-color) !important; /* Disable hover colour change */
 }
 
 .hammer-svg {
@@ -263,7 +308,7 @@ svg {
         justify-content: center; /* Horizontally center */
         align-items: center; /* Vertically center */
         width: 10%;
-        margin-right: 2dvw !important;
+        margin-right: 15px;
     }
 
     .title {
@@ -311,4 +356,11 @@ svg {
         /* This stops the content from looking squished width wise on wider monitors */
         max-width: 70% !important;
     }
+}
+
+@media screen and (max-height: 600px) {
+    .nav-area {
+        height: 10dvh;
+    }
+    
 }

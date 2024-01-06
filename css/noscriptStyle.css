@@ -1,0 +1,19 @@
+/* Incase JS is disabled */
+.nav-area-burger {
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    .sun-icon {
+        display: none ;
+    }
+}
+@media (prefers-color-scheme: light) {
+    .moon-icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav-area-links {
+        display: flex;
+    }
+}
