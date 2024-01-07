@@ -41,7 +41,7 @@ svg:hover {
 }
 
 .nav-theme-area {
-    padding-left: 30px;
+    margin-left: 1dvw !important; /* Will get overwritten by Pico CSS if not important */
 }
 
 .theme-toggle {
@@ -57,7 +57,7 @@ svg:hover {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    margin-right: 2dvw !important; /* Will get overwritten by Pico CSS if not important */
+    margin-right: 1dvw !important; /* Will get overwritten by Pico CSS if not important */
 }
 
 .nav-area-burger-open-btn { 
@@ -168,7 +168,7 @@ svg:hover {
     margin-top: 0px;
 }
 
-.area-1 {
+.about {
     height: 100%;
     margin-bottom: 0%;
 }
@@ -258,6 +258,15 @@ svg:hover {
 .footer-area {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-theme-area {
+        margin-left: 2dvw !important; /* Will get overwritten by Pico CSS if not important */
+    }
+    .nav-area-links {
+        margin-right: 2dvw !important; /* Will get overwritten by Pico CSS if not important */
+    }
 }
 
 @media screen and (max-width: 980px) {
