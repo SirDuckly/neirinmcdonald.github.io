@@ -196,6 +196,12 @@ svg:hover {
     align-items: center; /* Vertically center */
 }
 
+.whoami-image img {
+    height: 28dvh;
+    width: auto;
+    border-radius: 5px;
+}
+
 .project-item {
     background-color: var(--code-background-color);
     border-radius: 15px;
@@ -301,6 +307,7 @@ svg:hover {
         margin-left: 0%;
         margin-bottom: 3%;
     }
+
     .project-item {
         margin-top: 10px;
         margin-bottom: 10px; 
@@ -352,6 +359,13 @@ svg:hover {
         margin-bottom: 3%;
     }
 
+}
+
+@media screen and (max-width: 530px) {
+    .whoami-image img {
+        height: auto;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 310px) {
