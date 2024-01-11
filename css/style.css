@@ -77,6 +77,12 @@ svg:hover {
     float: right;
 }
 
+.nav-area-burger-close-li {
+    right: 0px;
+    position: absolute;
+}
+
+
 .nav-area-burger-links-area {
     position: fixed;
     transform: translateY(-100%);
